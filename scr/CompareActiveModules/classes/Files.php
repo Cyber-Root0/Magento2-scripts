@@ -12,7 +12,7 @@ namespace App\Scripts\CompareActiveModules\classes;
 
     public function GetBody(){
 
-        return file_get_contents($this->path);
+        return file($this->path);
     }
 
 
