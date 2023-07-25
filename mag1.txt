@@ -7,5 +7,3 @@ Temando_ShippingRemover
 List of disabled modules:
 Magento_TwoFactorAuth
 Magento_AdminAdobeImsTwoFactorAuth
-
-

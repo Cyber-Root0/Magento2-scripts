@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Scripts\CompareActiveModules;
-use App\Scripts\CompareActiveModules\classes\Files;
-use App\Scripts\CompareActiveModules\classes\Split;
+namespace App\Scripts\Compare;
+use App\Scripts\Compare\classes\Files;
+use App\Scripts\Compare\classes\Split;
 class Compare{
 
     private $mag_1;
@@ -12,16 +12,17 @@ class Compare{
 
     private $modules_1;
     private $modules_2;
-public function __construct($file=null,$file2=null, Files $files){
 
-        $this->mag_1 = $file;
-        $this->mag_2 = $file2;
-        $this->files = $files;
-        $this->split = new Split;
+public function initialine($file=null,$file2=null){
+
+            $this->mag_1 = $file;
+            $this->mag_2 = $file2;
+            $this->files = new Files;
+            $this->split = new Split;
+            $this->execute();
 }
 
 public function execute(){
-
     $this->modules_1 =  $this->split->setData($this->getDataLogs($this->mag_1));
     $this->modules_2 =  $this->split->setData($this->getDataLogs($this->mag_2));
     $this->ActiveModules();

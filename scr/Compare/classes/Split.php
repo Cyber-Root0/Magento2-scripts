@@ -1,5 +1,5 @@
 <?php
-namespace App\Scripts\CompareActiveModules\classes;
+namespace App\Scripts\Compare\classes;
 Class Split{
 
     private $data;
@@ -7,7 +7,7 @@ Class Split{
     private array $disable = [];
     private $LineStatus;
 public function setData($data){
-
+    
     $this->data = $data;
     $this->enable = [];
     $this->disable = [];

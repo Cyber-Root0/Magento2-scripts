@@ -1,1 +1,9 @@
-Exemplo Log2 
+List of enabled modules:
+MercadoPago_Core
+PayPal_Braintree
+
+List of disabled modules:
+Magento_TwoFactorAuth
+
+
+
